@@ -1,32 +1,44 @@
 package view.userinterfaces;
 import view.Scanner.Colors;
 import view.characters.Pet;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import view.characters.Wizard;
 import view.characters.types.PetTypes;
 import view.items.Potion;
 import view.spells.PlayerSpell;
 import view.gameplay.Gameplay;
-import view.spells.PlayerSpell;
+
 
 
 public class Cli implements UserInterfaces {
 
     public static Scanner scanner = null;
-
+    static {
+        scanner = new Scanner(System.in);
+    }
     public static Scanner getScanner() {
         if (scanner == null) {
             scanner = new Scanner(System.in);
         }
         return scanner;
     }
-
-    public static void closeScanner() {
-        if (scanner != null) {
-            scanner.close();
-            scanner = null;
+    public static int badInput() {
+        int input;
+        while (true) {
+            try {
+                input = Integer.parseInt(scanner.nextLine());
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Entrée non valide, veuillez réessayer.");
+            }
         }
+        return input;
     }
+
+
+
 
     @Override
     public String askUserName() {
@@ -56,6 +68,8 @@ public class Cli implements UserInterfaces {
         System.out.println("Après une légère hésitation votre choix se porte sur un/une " + petType + " !");
         return new Pet(PetTypes.valueOf(petType.toUpperCase()));
     }
+
+
 
 
     public String afficher(Wizard wizard) {

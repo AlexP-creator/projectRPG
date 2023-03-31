@@ -5,7 +5,7 @@ import view.characters.House;
 import view.characters.Wizard;
 
 public class SortingHat {
-    private static final double[] HOUSE_PERCENTAGES = {0.25,0.9,0.25,0.25};
+    private static final double[] HOUSE_PERCENTAGES = {0.25,0.25,0.25,0.25};
     private static final String[] HOUSE_NAMES = {Colors.BLUE+"Ravenclaw"+Colors.RESET,Colors.GRAY+ "Hufflepuff"+Colors.RESET,Colors.RED+"Gryffindor"+Colors.RESET, Colors.GREEN_2+"SLYTHERIN"+Colors.RESET};
     private static final Random random = new Random();
 

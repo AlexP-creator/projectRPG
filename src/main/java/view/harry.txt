@@ -38,8 +38,8 @@ Bien tenté, mais vos coups de poing ont simplement chatouillé le troll.\nIl vo
 
 Choix invalide. Veuillez choisir un sort valide :
 
-bien ouej
-dommage
+Bravo, vous avez réussi votre sort !
+Malheuresemement votre sort a échoué.
 Choisissez un sort :
 
 End of game.
@@ -66,10 +66,10 @@ Alors que vous montez les escaliers de la tour d'astronomie, vous entendez des v
 Niveau 7 :
 Alors que vous arrivez dans la grande salle de Poudlard, vous voyez Voldemort et Bellatrix Lestrange qui vous attendent de pied ferme. Vous n'avez pas le choix : vous devez vous battre pour protéger l'école et vaincre ces ennemis redoutables.
 
-Bravo, vous avez réussi votre sort et infligez des dégâts à l'ennemi!
-Malheuresemement votre sort a échoué vous prenez des degats de l'ennemi
+Bravo, vous avez réussi votre sort et infligez des dégâts à l'ennemi !
+Malheuresemement votre sort a échoué vous prenez des degats de l'ennemi.
 
-bien joué choissisez un moyen pour recuperer le croc du basilic
+Bien joué choissisez un moyen pour recuperer le croc du basilic
 
 Vous avez reussi a recuper le croc du basilique super
 Ce sort ne parvient pas a recuperer le corc veuillez reeassyer

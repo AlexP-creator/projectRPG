@@ -45,7 +45,7 @@ public class BasilicFight {
                     if (spell.isSuccess(wizard, chosenSpell)) {
                         Text.askText(69);
                         int modifiedDamage = spell.getModifiedDamage(wizard, chosenSpell);
-                        enemy.setHealth(enemy.getHealth() - modifiedDamage); System.out.println("Vous avez fait " + modifiedDamage + " de dégâts.");
+                        enemy.setHealth(enemy.getHealth() - modifiedDamage); System.out.println("Vous lui infligez " + modifiedDamage + " de dégâts.");
 
                     } else {
                         int damage = wizard.getHouse().getName().equals(Colors.RED + "Gryffindor" + Colors.RESET) ? 10 : 20;

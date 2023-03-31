@@ -24,7 +24,7 @@ public class Gameplay {
         playerSpells[0].setLocked(false);
 
         Potion potion1 = new Potion("Potion 1", 10);
-        Potion potion2 = new Potion("Potion 2", 20);
+        Potion potion2 = new Potion("Potion 2", 50);
         Wizard wizard = new Wizard(userInteract.askUserName());
         PlayMusic.playMusic("C:\\Users\\alexa\\OneDrive\\Documents\\A1\\JAVA\\projectRPG\\src\\main\\java\\view\\playmusic\\Harry-Potter-20th-Anniversary-Return-to-Hogwarts-Soundtrack-Hedwig’s-Theme-John-Williams.wav");
         System.out.println(Colors.YELLOW+"                              \uD83D\uDCAB BIENVENUE DANS LE MONDE MAGIQUE DE HARRY POTTER ! \uD83D\uDCAB"+Colors.RESET+"\n-------------------------\nVous êtes sur le point d'entrer dans une aventure palpitante où vous pourrez découvrir des sorts incroyables, des créatures fantastiques et des lieux mystérieux. \nCependant, vous devez vous méfier des dangers qui vous guettent. Vous rencontrerez peut-être des ennemis qui chercheront à vous nuire.\nVous devrez vous montrer vigilant et utiliser votre intelligence pour surmonter tous les obstacles.\nAlors, êtes-vous prêt à relever le défi et à devenir le héros de votre propre histoire ?");
@@ -48,11 +48,11 @@ public class Gameplay {
         DetractorsFight.startFight(wizard, playerSpells);
         userInteract.afterfight2(wizard,damage,potion1);
         PettigrowFight.startFight(wizard);
-        userInteract.afterfight2(wizard,damage,potion1);
+        userInteract.afterfight2(wizard,damage,potion2);
         DoloresFight.startFight(wizard,playerSpells);
-        userInteract.afterfight(wizard,damage,potion1,3);
+        userInteract.afterfight(wizard,damage,potion2,3);
         DeathEatersFight.startFight(wizard,playerSpells);
-        userInteract.afterfight(wizard,damage,potion1,4);
+        userInteract.afterfight(wizard,damage,potion2,4);
         PlayerSpell.unlockSpell(5);
         VoldemortFight.startFight(wizard,playerSpells);
         Text.askText(45);

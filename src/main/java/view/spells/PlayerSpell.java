@@ -1,10 +1,10 @@
 package view.spells;
 public enum PlayerSpell {
-    WINGARDIUM_LEVIOSA("Wingardium Leviosa", 30, 0.5, true),
-    ACCIO("Accio", 20, 0.9, true),
-     EXPECTO_PATRONUM("Expecto Patronum",30,0.7,true),
-    SECTUMSEMPRA("Sectumsempra",40,0.6,true),
-    AVADA_KEDAVRA("Avada Kedavra",50,0.5,true),
+    WINGARDIUM_LEVIOSA("Wingardium Leviosa", 40, 0.6, true),
+    ACCIO("Accio", 1, 1.0, true),
+     EXPECTO_PATRONUM("Expecto Patronum",20,0.7,true),
+    SECTUMSEMPRA("Sectumsempra",60,0.4,true),
+    AVADA_KEDAVRA("Avada Kedavra",100,0.2,true),
     EXPELLIARMUS("Expeliarmus",60,0.4,true),
 
     GRYFFINDORSWORD("GryffindorSword",10,1.0,true);

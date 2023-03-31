@@ -1,7 +1,5 @@
 package view.gameplay.fights;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import view.Scanner.Colors;

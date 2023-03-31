@@ -22,7 +22,7 @@ public class DoloresFight {
             Text.askText(33);
             Text.askText(34, Colors.BLACK);
             Text.askText(35, Colors.PURPLE);
-            int choice = scanner.nextInt();
+            int choice = badInput();
             switch (choice) {
                 case 1:
                     Text.askText(37);
@@ -37,7 +37,8 @@ public class DoloresFight {
                             spellIndex++;
                         }
                     }
-                    int spellChoice = scanner.nextInt();
+                    Scanner scanner = getScanner();
+                    int spellChoice = badInput();
                     while (spellChoice < 1 || spellChoice >= spellIndex) {
                         Text.askText(39);
                         spellChoice = scanner.nextInt();
